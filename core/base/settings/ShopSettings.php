@@ -19,11 +19,13 @@ class ShopSettings
     {
     }
 
-    private  $routes = [
-        'admin' => [
-            'alias' => 'admin2',
-
+    private $routes = [
+        'plugins' => [
+            'dir' => false,
+            'routes' => [
+            ]
         ],
+
     ];
 
     private $templateArr = [

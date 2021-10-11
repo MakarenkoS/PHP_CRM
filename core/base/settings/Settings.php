@@ -23,6 +23,9 @@ class Settings
           'alias' => 'admin',
           'path' => 'core/admin/controller/',
           'hrUrl' => false,
+          'routes' => [
+
+          ]
       ],
       'settings' => [
           'path' => 'core/base/settings/'
@@ -30,6 +33,7 @@ class Settings
       'plugins' => [
           'path' => 'core/plugins/',
           'hrUrl' => false,
+          'dir' => false,
       ],
       'user' => [
           'path' => 'core/user/controller/',
