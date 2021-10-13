@@ -1,7 +1,7 @@
 <?php
 
 defined('VG_ACCESS') or die('Access denied');
-echo "config.php include..";
+
 
 const SITE_URL = 'http://im';
 const PATH = '/';

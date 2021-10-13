@@ -7,16 +7,11 @@ use core\base\exceptions\RouteException;
 use core\base\settings\Settings;
 use core\base\settings\ShopSettings;
 
-class RouteController
+class RouteController extends BaseController
 {
     static private $_instance;
 
     protected $routes;
-
-    protected $controller;
-    protected $inputMethod;
-    protected $outputMethod;
-    protected $parameters;
 
 
     static public function getInstance() {
@@ -36,7 +31,6 @@ class RouteController
         if(strrpos($address_str, '/')  === strlen($address_str) - 1 && strrpos($address_str, '/') !== 0) {
             $this->redirect(rtrim($address_str, '/'), 301);
         }
-//
 
 
         // *****************************index.php для OS***********im/index.php для PHPStorm
