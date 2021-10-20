@@ -1,0 +1,8 @@
+Fault 20-10-2021 16:28:08 - Неверное имя файла: core/user/controller/IndexController
+ file D:\1\web\OpenServer5\domains\im\core\base\settings\internal_settings.php
+In line 37
+
+Fault 20-10-2021 16:33:03 - Method core\admin\controller\IndexController::request() does not exist
+ file D:\1\web\OpenServer5\domains\im\core\base\controller\BaseController.php
+In line 62
+

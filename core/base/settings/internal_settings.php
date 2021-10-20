@@ -11,17 +11,21 @@ const CRYPT_KEY = '';
 const COOKIE_TIME = 60;
 const BLOCK_TIME = 3;
 
+
+//Отображение кол-ва данных
 const QTY = 8;
 const QTY_LINKS = 3;
 
+
+//Скрипты и стили
 const ADMIN_CSS_JS = [
-   'styles' => [],
+   'styles' => ['admin/dd'],
    'scripts' => []
 ];
 
 const USER_CSS_JS = [
-    'styles' => [],
-    'scripts' => []
+    'styles' => ['vfvf/vfvvf', '/dddd'],
+    'scripts' => ['http://im/']
 ];
 
 use core\base\exceptions\RouteException;

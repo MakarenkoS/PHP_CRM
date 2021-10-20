@@ -6,26 +6,9 @@ namespace core\base\controller;
 
 trait BaseMethods
 {
-    protected $styles;
-    protected $scripts;
 
-    protected function init($admin = false) {
-        if(!$admin) {
-            if(USER_CSS_JS['styles']) {
-                foreach (USER_CSS_JS['styles'] as $item) $this->styles[] = PATH . TEMPLATE . trim($item, '/');
-            }
-            if(USER_CSS_JS['scripts']) {
-                foreach (USER_CSS_JS['scripts'] as $item) $this->scripts[] = PATH . TEMPLATE . trim($item, '/');
-            }
-        } else {
-            if(ADMIN_CSS_JS['styles']) {
-                foreach (USER_CSS_JS['styles'] as $item) $this->styles[] = PATH . TEMPLATE . trim($item, '/');
-            }
-            if(ADMIN_CSS_JS['scripts']) {
-                foreach (USER_CSS_JS['scripts'] as $item) $this->scripts[] = PATH . TEMPLATE . trim($item, '/');
-            }
-        }
-    }
+
+//    **************************Метод очистки строковых данных***************
 
     protected function clearStr($str) {
 
@@ -36,19 +19,23 @@ trait BaseMethods
             return trim(strip_tags($str));
         }
     }
+//    ************************Метод очистки числовых данных*****************
 
     protected function clearNum($num) {
+        // Приведение к числу (в php строка приводится к нулю)
         return $num * 1;
     }
 
+//    ************************Пришли ли данные с метода POST?
     protected function isPost() {
         return $_SERVER['REQUEST_METHOD'] == 'POST';
     }
-
+//    ***********************Пришли ли даные с XMLHttpRequest?
     protected function isAjax() {
         return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
     }
 
+//    **********************Перенаправление и отправление заголовков
     protected function redirect($http = false, $code = false) {
 
         if($code) {
@@ -57,6 +44,7 @@ trait BaseMethods
         }
 
         if($http) $redirect = $http;
+//        ($_SERVER['HTTP_REFERER'] - существует если пользователь перешел со станицы нашего сайта иначе на перенаправляем на главную
             else $redirect =isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : PATH;
 
             header("Location: $redirect");

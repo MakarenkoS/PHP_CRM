@@ -13,6 +13,7 @@ class IndexController extends BaseController {
 //    }
     protected function inputData() {
 //        $this->writeLog('TEST', 'testlog.txt', 'testEvent');
+        $this->init();
         exit();
     }
 

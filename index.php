@@ -1,6 +1,7 @@
 <?php
 
-define('VG_ACCESS', true);
+define('VG_ACCESS', true); // Переменная для работы с конфигами
+
 header('Content-type:text/html; charset=utf-8');
 session_start();
 
@@ -11,9 +12,11 @@ require_once 'core/base/settings/internal_settings.php';
 use core\base\exceptions\RouteException;
 use core\base\controller\RouteController;
 
+
+
 try {
-    RouteController::getInstance()->route();
-//    RouteController::getInstance();
+    RouteController::instance()->route();
+
 }
 
 catch (RouteException $e) {
