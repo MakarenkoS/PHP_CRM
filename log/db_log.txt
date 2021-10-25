@@ -1,0 +1,28 @@
+Fault 22-10-2021 15:54:54 - Ошибка подключения к базе данных: 1045 Access denied for user 'root'@'localhost' (using password: NO)
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 22
+
+Fault 22-10-2021 15:55:23 - Ошибка подключения к базе данных: 1045 Access denied for user 'root'@'localhost' (using password: NO)
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 22
+
+Fault 22-10-2021 15:56:03 - Ошибка подключения к базе данных: 1045 Access denied for user 'root'@'localhost' (using password: NO)
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 22
+
+Fault 22-10-2021 15:57:19 - Ошибка подключения к базе данных: 1045 Access denied for user 'root'@'localhost' (using password: NO)
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 22
+
+Fault 23-10-2021 9:48:53 - Ошибка в SQL запросеSELECT * FROM articles1 - 1146 Table 'im.articles1' doesn't exist
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 36
+
+Fault 23-10-2021 9:49:48 - Ошибка в SQL запросе SELECT * FROM articles1 - 1146 Table 'im.articles1' doesn't exist
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 36
+
+Fault 23-10-2021 9:50:32 - Ошибка в SQL запросе: SELECT name1 FROM articles - 1054 Unknown column 'name1' in 'field list'
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 36
+
