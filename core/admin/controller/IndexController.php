@@ -28,16 +28,16 @@ class IndexController extends BaseController
 
 
         $table = 'teachers';
-//        $res = $db->get($table, [
-//            'fields' => ['id', 'name'],
-//            'where' => ['fio' => 'smirnova', 'name' => 'Masha', 'surname' => 'Sergeevna'],
-//            'operand' => ['<>', '='],
-//            'condition' => ['AND'],
-//            'order' => ['fio', 'name'],
-//            'order_direction' => ['ASC', 'DESC'],
-//            'limit' => '1'
-//
-//        ]);
+        $res = $db->get($table, [
+            'fields' => ['id', 'name'],
+            'where' => ['fio' => 'smirnova', 'name' => 'Masha', 'surname' => 'Sergeevna'],
+            'operand' => ['<>', '='],
+            'condition' => ['AND'],
+            'order' => ['fio', 'name'],
+//            'order_direction' => ['DESC'],
+            'limit' => '1'
+
+        ]);
 
         exit('admin panel');
     }
