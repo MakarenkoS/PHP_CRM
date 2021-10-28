@@ -12,7 +12,9 @@ class IndexController extends BaseController
 
         $db = Model::instance();
 
-        $query = "SELECT * from articles, pages WHERE articles.id = 2";
+
+        $query = "SELECT * from articles, pages WHERE articles.id = 1";
+
         $query2 = "SELECT * FROM articles JOIN pages ON articles.id = 1";
 
 
