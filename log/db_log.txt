@@ -26,3 +26,27 @@ Fault 23-10-2021 9:50:32 - Ошибка в SQL запросе: SELECT name1 FROM
  file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
 In line 36
 
+Fault 26-10-2021 8:19:14 - Ошибка в SQL запросе: SELECT * from articles - 1146 Table 'im.articles' doesn't exist
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 36
+
+Fault 26-10-2021 8:21:36 - Ошибка в SQL запросе: SELECT * from articles - 1146 Table 'im.articles' doesn't exist
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 36
+
+Fault 26-10-2021 8:21:49 - Ошибка в SQL запросе: SELECT * from articles - 1146 Table 'im.articles' doesn't exist
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 36
+
+Fault 26-10-2021 8:23:38 - Ошибка в SQL запросе: SELECT id,name from articles WHERE pages.article_id = 2 - 1054 Unknown column 'pages.article_id' in 'where clause'
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 36
+
+Fault 26-10-2021 8:23:41 - Ошибка в SQL запросе: SELECT id,name from articles WHERE pages.article_id = 2 - 1054 Unknown column 'pages.article_id' in 'where clause'
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 36
+
+Fault 26-10-2021 10:17:33 - Ошибка в SQL запросе: SELECT * FROM articles JOIN pages ON articles.id = pages.article.id - 1054 Unknown column 'pages.article.id' in 'on clause'
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 36
+
