@@ -35,15 +35,18 @@ class IndexController extends BaseController
 //                    LEFT JOIN students ON stud_teach.students = students.id
 //                    ";
 
-
         $table = 'teachers';
+
+        $color = ['red', 'blue', 'black'];
+
         $res = $db->get($table, [
             'fields' => ['id', 'name'],
-            'where' => ['fio' => 'smirnova', 'name' => 'Masha', 'surname' => 'Sergeevna'],
-            'operand' => ['<>', '='],
-            'condition' => ['AND'],
+            'where' => ['name' => 'masha',
+                'surname' => 'Sergeevna', 'fio' => 'Andrey',  'car' => 'bmw', 'color'=> $color],
+            'operand' => ['IN', 'LIKE%', '<>', '=', 'NOT IN'],
+            'condition' => ['AND', 'OR'],
             'order' => ['fio', 'name'],
-//            'order_direction' => ['DESC'],
+            'order_direction' => ['DESC'],
             'limit' => '1'
 
         ]);
