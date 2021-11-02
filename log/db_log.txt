@@ -50,3 +50,15 @@ Fault 26-10-2021 10:17:33 - Ошибка в SQL запросе: SELECT * FROM ar
  file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
 In line 36
 
+Fault 02-11-2021 7:44:08 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE  teachers.name='masha'  ORDER BY teachers.name DESC LIMIT 1 - 1146 Table 'im.teachers' doesn't exist
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 36
+
+Fault 02-11-2021 7:45:31 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name FROM teachers  WHERE  teachers.name='masha'  ORDER BY teachers.name DESC LIMIT 1 - 1146 Table 'im.teachers' doesn't exist
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 36
+
+Fault 02-11-2021 7:59:27 - Ошибка в SQL запросе: SELECT teachers.id,teachers.name,join_table1.id as j_id,join_table1.name as j_name FROM teachers join_table1.id as j_id,join_table1.name as j_name, WHERE  teachers.name='O\'r' AND join_table1.name='Sasha'  ORDER BY teachers.name DESC LIMIT 1 - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.id as j_id,join_table1.name as j_name, WHERE  teachers.name='O\'r' AND join_tab' at line 1
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 36
+
