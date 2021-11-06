@@ -62,3 +62,31 @@ Fault 02-11-2021 7:59:27 - Ошибка в SQL запросе: SELECT teachers.i
  file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
 In line 36
 
+Fault 06-11-2021 10:17:27 - Ошибка в SQL запросе: INSERT INTO teachers () VALUES ('','','[\"red\'\'.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 44
+
+Fault 06-11-2021 10:18:37 - Ошибка в SQL запросе: INSERT INTO teachers () VALUES ('Olga','Hello','[\"red\'\'.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 44
+
+Fault 06-11-2021 10:22:57 - Ошибка в SQL запросе: INSERT INTO teachers () VALUES ('Olga','Hello','[\"red\'\'.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1136 Column count doesn't match value count at row 1
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 44
+
+Fault 06-11-2021 10:23:15 - Ошибка в SQL запросе: INSERT INTO teachers () VALUES ('Olga','Hello','[\"red\'\'.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1136 Column count doesn't match value count at row 1
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 44
+
+Fault 06-11-2021 10:23:28 - Ошибка в SQL запросе: INSERT INTO teachers () VALUES ('Olga','Hello','[\"red\'\'.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 44
+
+Fault 06-11-2021 10:24:44 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,gallery_img,img,) VALUES ('Olga','Hello','[\"red\'\'.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg',) - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') VALUES ('Olga','Hello','[\"red\'\'.jpg\",\"blue.jpg\",\"black.jpg\"]','main_im' at line 1
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 44
+
+Fault 06-11-2021 10:29:10 - Ошибка в SQL запросе: INSERT INTO teachers (content,gallery_img,img) VALUES ('Hello','[\"red\'\'.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1364 Field 'name' doesn't have a default value
+ file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
+In line 44
+

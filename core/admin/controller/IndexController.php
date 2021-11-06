@@ -37,13 +37,15 @@ class IndexController extends BaseController
 
         $table = 'teachers';
 
-        $color = ['red', 'blue', 'black'];
+        $files['gallery_img'] = ["red''.jpg", 'blue.jpg', 'black.jpg'];
+        $files['img'] = 'main_img.jpg';
 
-        $res = $db->get($table, [
-            'fields' => ['id', 'name'],
-            'where' => ['name' => "O'Rally"],
-            'limit' => 1
-        ])[0];
+
+        $res = $db->add($table, [
+            'fields' => ['name' => 'Vasya', 'content' => 'Hello'],
+            'except' => ['name'],
+            'files' => $files
+        ]);
 
         exit('id = ' . $res['id'] . ' ' . ' name = ' . $res['name']);
     }
