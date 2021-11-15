@@ -37,16 +37,30 @@ class IndexController extends BaseController
 
         $table = 'teachers';
 
-        $files['gallery_img'] = ["red''.jpg", 'blue.jpg', 'black.jpg'];
-        $files['img'] = 'main_img.jpg';
+        $files['gallery_img'] = [""];
+        $files['img'] = '';
+//        $files = [];
 
+        $_POST['id'] = 1;
+        $_POST['name'] = '';
+        $_POST['content'] = "<p>New'3 </p>";
+//        $res = $db->edit($table, [
+//            'files' => $files
+//        ]);
+//            'fields' => ['id'=> 2,'name' => 'Ivan222'],
 
-        $res = $db->add($table, [
-            'fields' => ['name' => 'Vasya', 'content' => 'Hello'],
-            'except' => ['name'],
-            'files' => $files
+        $res = $db->delete($table, [
+            'where' => ['id' => 13],
+            'join' => [
+                'students' => [
+                    'table' => 'students',
+                    'on' => ['student_id', 'id']
+                ]
+            ]
         ]);
 
-        exit('id = ' . $res['id'] . ' ' . ' name = ' . $res['name']);
+
+
+       exit('id = ' . $res['id'] . ' ' . ' name = ' . $res['name']);
     }
 }

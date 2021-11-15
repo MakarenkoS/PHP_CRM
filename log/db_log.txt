@@ -90,3 +90,15 @@ Fault 06-11-2021 10:29:10 - Ошибка в SQL запросе: INSERT INTO teac
  file D:\1\web\OpenServer5\domains\im\core\base\model\BaseModel.php
 In line 44
 
+Fault 07-11-2021 17:53:17 - Ошибка в SQL запросе: INSERT INTO teachers (name,content,gallery_img,img) VALUES ('Vasya','Hello1','[\"red\'\'.jpg\",\"blue.jpg\",\"black.jpg\"]','main_img.jpg') - 1054 Unknown column 'gallery_img' in 'field list'
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 44
+
+Fault 10-11-2021 15:57:06 - Ошибка в SQL запросе: UPDATE teachers SET name=,img= WHERE  teachers.id='2'  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'img= WHERE  teachers.id='2'' at line 1
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 45
+
+Fault 10-11-2021 16:00:14 - Ошибка в SQL запросе: UPDATE teachers SET name=NULL,img=NULL WHERE  teachers.id='7'  - 1048 Column 'name' cannot be null
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 45
+
