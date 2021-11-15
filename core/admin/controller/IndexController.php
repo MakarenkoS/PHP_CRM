@@ -44,13 +44,23 @@ class IndexController extends BaseController
         $_POST['id'] = 1;
         $_POST['name'] = '';
         $_POST['content'] = "<p>New'3 </p>";
-        $res = $db->edit($table, [
-            'files' => $files
-        ]);
+//        $res = $db->edit($table, [
+//            'files' => $files
+//        ]);
 //            'fields' => ['id'=> 2,'name' => 'Ivan222'],
 
+        $res = $db->delete($table, [
+            'where' => ['id' => 13],
+            'join' => [
+                'students' => [
+                    'table' => 'students',
+                    'on' => ['student_id', 'id']
+                ]
+            ]
+        ]);
 
 
-        exit('id = ' . $res['id'] . ' ' . ' name = ' . $res['name']);
+
+       exit('id = ' . $res['id'] . ' ' . ' name = ' . $res['name']);
     }
 }

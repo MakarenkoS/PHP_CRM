@@ -150,6 +150,7 @@ abstract class BaseModelMethods
         $fields = '';
         $join = '';
         $where = '';
+        $tables = '';
 
         if ($set['join']) {
 
@@ -168,9 +169,15 @@ abstract class BaseModelMethods
 
                     $join_fields = [];
 
+                    $fieldsCount = 0;
+                    if($item['on']['fields']) {
+                        $fieldsCount = count(($item['on']['fields']));
+                    }
+
+
                     switch (2) {
 
-                        case count($item['on']['fields']):
+                        case $fieldsCount:
                             $join_fields = $item['on']['fields'];
                             break;
 
@@ -196,6 +203,9 @@ abstract class BaseModelMethods
 
                     $join_table = $key;
 
+                    $tables .= ', ' . trim($join_table);
+
+
                     if ($new_where) {
 
                         if ($item['where']) {
@@ -214,7 +224,7 @@ abstract class BaseModelMethods
             }
         }
 
-        return compact('fields', 'join', 'where');
+        return compact('fields', 'join', 'where', 'tables');
 
     }
 
@@ -267,6 +277,8 @@ abstract class BaseModelMethods
 
                 if(in_array($value, $this->sqlFunc)) {
                     $update .= $value . ',';
+                } else if($value === NULL) {
+                    $update .= "NULL" . ',';
                 } else {
                     $update .= "'" . addslashes($value) . "',";
                 }
