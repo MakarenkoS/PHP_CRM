@@ -24,8 +24,8 @@ const ADMIN_CSS_JS = [
 ];
 
 const USER_CSS_JS = [
-    'styles' => ['vfvf/vfvvf', '/dddd'],
-    'scripts' => ['http://im/']
+    'styles' => [],
+    'scripts' => []
 ];
 
 use core\base\exceptions\RouteException;

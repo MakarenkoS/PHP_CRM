@@ -102,3 +102,35 @@ Fault 10-11-2021 16:00:14 - Ошибка в SQL запросе: UPDATE teachers 
  file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
 In line 45
 
+Fault 15-11-2021 16:18:41 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 45
+
+Fault 15-11-2021 16:21:26 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 45
+
+Fault 15-11-2021 16:21:35 - Ошибка в SQL запросе: SHOW COLUMNS FROM  - 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 45
+
+Fault 19-11-2021 10:55:23 - Ошибка в SQL запросе: SHOW COLUMNS FROM ttt - 1146 Table 'im.ttt' doesn't exist
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 45
+
+Fault 19-11-2021 10:55:32 - Ошибка в SQL запросе: SHOW COLUMNS FROM ttt - 1146 Table 'im.ttt' doesn't exist
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 45
+
+Fault 19-11-2021 10:55:50 - Ошибка в SQL запросе: SHOW COLUMNS FROM ttt - 1146 Table 'im.ttt' doesn't exist
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 45
+
+Fault 19-11-2021 10:57:56 - Ошибка в SQL запросе: SHOW COLUMNS FROM aa - 1146 Table 'im.aa' doesn't exist
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 45
+
+Fault 19-11-2021 10:58:04 - Ошибка в SQL запросе: SHOW COLUMNS FROM aa - 1146 Table 'im.aa' doesn't exist
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\model\BaseModel.php
+In line 45
+

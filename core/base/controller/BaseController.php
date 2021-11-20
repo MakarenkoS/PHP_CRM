@@ -43,7 +43,6 @@ abstract class BaseController
         }
     }
 
-
     public function route() {
         $controller  = str_replace('/', '\\', $this->controller);
 
@@ -121,7 +120,5 @@ abstract class BaseController
 
 
 }
-
-
 
 }
