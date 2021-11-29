@@ -6,3 +6,27 @@ Fault 20-10-2021 16:33:03 - Method core\admin\controller\IndexController::reques
  file D:\1\web\OpenServer5\domains\im\core\base\controller\BaseController.php
 In line 62
 
+Fault 29-11-2021 11:41:21 - Неверное имя файла: core/admin/controller/Settings
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\settings\internal_settings.php
+In line 37
+
+Fault 29-11-2021 11:42:59 - Неверное имя файла: core/admin/controller/Settings
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\settings\internal_settings.php
+In line 37
+
+Fault 29-11-2021 11:43:01 - Неверное имя файла: core/admin/controller/Settings
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\settings\internal_settings.php
+In line 37
+
+Fault 29-11-2021 11:43:12 - Неверное имя файла: core/admin/controller/Settings
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\settings\internal_settings.php
+In line 37
+
+Fault 29-11-2021 11:43:31 - Неверное имя файла: core/admin/controller/Settings
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\settings\internal_settings.php
+In line 37
+
+Fault 29-11-2021 11:44:31 - Неверное имя файла: core/admin/controller/Settings
+ file D:\WEB\soft\openServer\OpenServer\domains\im\core\base\settings\internal_settings.php
+In line 37
+
